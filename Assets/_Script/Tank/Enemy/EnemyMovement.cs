@@ -36,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
         if (EventManager.EnemyCount != null)
             EventManager.EnemyCount(1);
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         if (EventManager.EnemyCount != null)
             EventManager.EnemyCount(-1);
